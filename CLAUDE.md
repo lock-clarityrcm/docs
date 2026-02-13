@@ -1,5 +1,15 @@
 # Mintlify Documentation Project
 
+## IMPORTANT: Always Use the Mintlify Skill
+
+**Before creating, editing, or updating any documentation page or content, you MUST invoke the `mintlify` skill first.** This ensures you follow current Mintlify best practices, component syntax, and conventions.
+
+```
+Skill(mintlify)
+```
+
+Use the skill for: creating new pages, updating existing pages, adding components, configuring navigation, setting up API references, or any content changes to the knowledge base.
+
 ## Project Overview
 
 This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX components). Configuration lives in `docs.json`.
@@ -18,17 +28,14 @@ This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX 
 /
 ├── docs.json              # Site config (navigation, theme, colors, logo)
 ├── index.mdx              # Landing page
-├── quickstart.mdx         # Quickstart guide
-├── development.mdx        # Local development guide
-├── essentials/            # Core docs (markdown, code, images, navigation, settings, snippets)
-├── api-reference/         # API docs + OpenAPI spec
-│   ├── introduction.mdx
-│   ├── openapi.json       # OpenAPI specification
-│   └── endpoint/          # Individual endpoint pages
-├── ai-tools/              # AI tool integration guides (cursor, claude-code, windsurf)
 ├── snippets/              # Reusable MDX snippets
 ├── images/                # Static images
-└── logo/                  # Light/dark logo SVGs
+├── logo/                  # Light/dark logo SVGs
+└── .claude/
+    ├── settings.json      # Project MCP servers (tracked in git)
+    └── skills/
+        └── mintlify/      # Mintlify skill — ALWAYS reference before creating/editing pages
+            └── SKILL.md
 ```
 
 ## Writing Conventions
