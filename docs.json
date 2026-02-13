@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Documentation",
+  "name": "Clarity RCM",
   "colors": {
-    "primary": "#3B82F6",
-    "light": "#60A5FA",
-    "dark": "#2563EB"
+    "primary": "#FF2D00",
+    "light": "#FF5733",
+    "dark": "#CC2400"
   },
   "favicon": "/favicon.svg",
   "logo": {

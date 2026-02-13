@@ -12,7 +12,25 @@ Use the skill for: creating new pages, updating existing pages, adding component
 
 ## Project Overview
 
-This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX components). Configuration lives in `docs.json`.
+Clarity RCM knowledge base on Mintlify (MDX + JSX components, config in `docs.json`). Two properties:
+
+- **Help Center** — Client-facing self-service support (26 pages, 7 sections). Onboarding, EHR guides, workflows, payer alerts.
+- **Clarity Academy** — Public SEO content for dermatology RCM education (58 pages, 10 sections). Procedure coding, modifiers, compliance, payer management, role-based guides.
+
+Content is **dermatology-specific** — never generic medical billing. Audiences: practice owners, billing managers, coders, front desk staff. Clients span multiple EHR systems (ModMed, EZDerm, AdvancedMD) — content should be adaptive where relevant.
+
+### Content sources
+- Processed content: `/Users/michaellock/Documents/clarity-docs/` (help-center/ and clarity-academy/)
+- Unprocessed source material (48 files): `knowledge-base/.to-be-processed/`
+
+### Brand
+- **Full name:** Clarity RCM (two words, title case). "Clarity" ok on second reference.
+- **Colors:** Clarity Blue `#1884F9` (primary/trust), Clarity Red `#FF2D00` (accents/CTAs), Black `#000000`, Dark Gray `#1F2A37`
+- **Typography:** GT Walsheim Pro (Medium for headlines, Regular for body)
+- **Voice:** Trusted expert advisor — consultative, confident, transparent, dedicated, conversational (not formal)
+- **Writing:** Active voice, Oxford comma, "we" partnership language, lead with most important info
+- **Avoid:** Corporate jargon (synergy, leverage, disruption), price language (low-cost, cheap), vague claims ("we handle it all"), marketing fluff (powerful, seamless, cutting-edge)
+- Full brand guidelines: `/Users/michaellock/Documents/Assistant/context/brand/`
 
 ## Commands
 
@@ -33,9 +51,11 @@ This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX 
 /
 ├── docs.json              # Site config (navigation, theme, colors, logo)
 ├── index.mdx              # Landing page
+├── help-center/           # Client-facing support docs (26 pages)
+├── academy/               # Public SEO educational content (58 pages)
 ├── snippets/              # Reusable MDX snippets
 ├── images/                # Static images
-├── logo/                  # Light/dark logo SVGs
+├── logo/                  # Light/dark Clarity RCM logos
 ├── .mcp.json              # MCP server configs (Mintlify search)
 └── .claude/
     ├── settings.json      # Project-level Claude settings (tracked in git)
@@ -312,6 +332,8 @@ GA4, GTM, PostHog, Amplitude, Mixpanel, Segment, Plausible, Fathom, Pirsch, Hotj
 
 ## Key Rules
 
+- Brand color: `#1884F9` (Clarity Blue, primary), `#FF2D00` (Clarity Red, accents/CTAs)
+- SEO: Every Academy page targets derm-specific long-tail keywords, not generic billing terms
 - MCP servers go in `.mcp.json` (not `.claude/settings.json`) — use `"type": "http"` with `"url"` for remote servers
 - `npx skills add` installs to `.agents/` — copy to `.claude/skills/` if you want git-tracked skills
 - Always search existing docs before creating new pages — prefer updating over duplicating
