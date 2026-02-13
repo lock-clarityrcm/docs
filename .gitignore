@@ -2,6 +2,4 @@ node_modules/
 .mintlify/
 .env
 .DS_Store
-.agents/
-.claude/
-.cursor/
+.claude/settings.local.json
