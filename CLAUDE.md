@@ -19,8 +19,13 @@ This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX 
 - `mint dev` — Start local dev server at http://localhost:3000
 - `mint dev --port 3001` — Use a custom port
 - `mint broken-links` — Check for broken internal links
+- `mint validate` — Validate documentation builds
+- `mint a11y` — Check accessibility issues
+- `mint rename` — Rename/move files and update references
 - `npm i -g mint` — Install Mintlify CLI globally
 - `npx mint dev` — Alternative if `mint` is not globally installed
+- `SearchMintlify` MCP tool — Search Mintlify docs directly (connected via `.mcp.json`)
+- Full docs.json schema: `https://mintlify.com/docs.json` (enables editor autocomplete)
 
 ## Project Structure
 
@@ -31,8 +36,9 @@ This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX 
 ├── snippets/              # Reusable MDX snippets
 ├── images/                # Static images
 ├── logo/                  # Light/dark logo SVGs
+├── .mcp.json              # MCP server configs (Mintlify search)
 └── .claude/
-    ├── settings.json      # Project MCP servers (tracked in git)
+    ├── settings.json      # Project-level Claude settings (tracked in git)
     └── skills/
         └── mintlify/      # Mintlify skill — ALWAYS reference before creating/editing pages
             └── SKILL.md
@@ -47,6 +53,9 @@ This is a Mintlify documentation site. Pages are written in MDX (Markdown + JSX 
 - **Internal links:** Use root-relative paths without `.mdx` extension (e.g., `/guides/auth`)
 - **Images:** Store in `/images/`, reference as `/images/filename.png`. Max 5MB per file.
 - **Code blocks:** Always specify a language tag. Use `{1,3-5}` for line highlighting.
+- **Headings:** Sentence case ("Getting started", not "Getting Started")
+- **Content:** Search existing docs before creating new pages — update or link instead of duplicating
+- **Avoid:** Marketing language ("powerful", "seamless"), filler phrases ("it's important to note"), editorializing ("simply", "just", "easily")
 
 ## Frontmatter Fields
 
@@ -196,6 +205,13 @@ graph TD
 ```
 ````
 
+### AI Prompts
+```mdx
+<Prompt description="What this prompt does" icon="paperclip" actions={["copy", "cursor"]}>
+  You are a helpful assistant...
+</Prompt>
+```
+
 ### Changelog Updates
 ```mdx
 <Update label="January 2026" description="v2.1.0" id="v2-1-0">
@@ -287,12 +303,22 @@ GA4, GTM, PostHog, Amplitude, Mixpanel, Segment, Plausible, Fathom, Pirsch, Hotj
 - 70+ CSS selectors available: `#navbar`, `footer`, `.sidebar`, `.code-block`, etc.
 - Provide light/dark image variants: `className="block dark:hidden"` / `className="hidden dark:block"`
 
+## Git Workflow
+
+- Never use `--no-verify` when committing
+- Create new branches for non-trivial changes
+- Commit frequently with descriptive messages
+- Mark uncertain content with `{/* TODO: Verify ... */}` comments
+
 ## Key Rules
 
+- MCP servers go in `.mcp.json` (not `.claude/settings.json`) — use `"type": "http"` with `"url"` for remote servers
+- `npx skills add` installs to `.agents/` — copy to `.claude/skills/` if you want git-tracked skills
+- Always search existing docs before creating new pages — prefer updating over duplicating
 - Every MDX file needs frontmatter with at least `title`
 - Pages not in `docs.json` navigation are hidden but still accessible via URL and search
 - Cannot use `api` as a top-level folder name (reserved by Next.js)
 - Images max 5MB; host larger files on Cloudinary/S3
-- API endpoints auto-generate from OpenAPI specs
+- API endpoints auto-generate from OpenAPI specs — prefer OpenAPI over manual MDX
 - Run `mint dev` to preview changes locally before committing
-- Run `mint broken-links` to validate internal links
+- Run `mint broken-links` and `mint validate` before pushing
