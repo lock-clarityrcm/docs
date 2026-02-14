@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Clarity RCM",
   "colors": {
-    "primary": "#FF2D00",
-    "light": "#FF5733",
-    "dark": "#CC2400"
+    "primary": "#1884F9",
+    "light": "#4BA3FF",
+    "dark": "#0D6FE0"
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -15,11 +15,70 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting Started",
-            "pages": ["index"]
+            "group": "Help Center",
+            "pages": ["help-center/index"]
+          },
+          {
+            "group": "Getting started",
+            "pages": [
+              "help-center/welcome-to-clarity",
+              "help-center/onboarding-checklist",
+              "help-center/meet-your-team"
+            ]
+          },
+          {
+            "group": "Working with Clarity",
+            "pages": [
+              "help-center/division-of-responsibilities-overview",
+              "help-center/practice-responsibilities",
+              "help-center/clarity-responsibilities",
+              "help-center/comprehensive-services-list",
+              "help-center/communication-expectations"
+            ]
+          },
+          {
+            "group": "EHR & portal guides",
+            "pages": [
+              "help-center/ehr-pms-access",
+              "help-center/payjunction-setup",
+              "help-center/klara-setup",
+              "help-center/modmed-guide",
+              "help-center/ezderm-guide"
+            ]
+          },
+          {
+            "group": "ModMed workflows",
+            "pages": [
+              "help-center/managing-patient-bills-modmed",
+              "help-center/payment-buckets-modmed",
+              "help-center/payer-not-added-guide"
+            ]
+          },
+          {
+            "group": "Patient services",
+            "pages": [
+              "help-center/patient-services-intro",
+              "help-center/patient-services-scope",
+              "help-center/patient-scenarios"
+            ]
+          },
+          {
+            "group": "Payer alerts",
+            "pages": [
+              "help-center/aetna-signature-policy",
+              "help-center/cigna-modifier-25"
+            ]
+          },
+          {
+            "group": "Getting help",
+            "pages": [
+              "help-center/contact-clarity-urgent-issues",
+              "help-center/faq",
+              "help-center/troubleshooting"
+            ]
           }
         ]
       }

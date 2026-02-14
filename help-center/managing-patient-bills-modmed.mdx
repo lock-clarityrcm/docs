@@ -1,0 +1,81 @@
+---
+title: "Finding and managing patient bills"
+description: "How to locate, review, and manage Patient Bills for self-pay and cosmetic services."
+sidebarTitle: "Patient Bills"
+icon: file-invoice-dollar
+---
+
+Patient Bills (PBs) are a key responsibility of your practice, distinct from the Claim Bills (CBs) that Clarity RCM manages. PBs are generated for services that are not billed to insurance, such as self-pay or cosmetic procedures. This guide covers how to find and manage them.
+
+<Note>
+
+**Your Responsibility:** Clarity RCM does not manage Patient Bills. Your practice handles all PB creation, payment application, and collection for self-pay and cosmetic services.
+
+</Note>
+
+## Understanding Patient Bills vs. Claim Bills
+
+| Bill Type | Created For | Who Manages |
+|-----------|-------------|-------------|
+| **Claim Bill (CB)** | Insurance claims | Clarity RCM |
+| **Patient Bill (PB)** | Self-pay, cosmetic | Your Practice |
+
+## Your responsibilities for PBs
+
+| Task | Description |
+|------|-------------|
+| **Posting PBs** | Creating the bill in the system for self-pay or cosmetic procedures |
+| **Applying Payments** | Apply any self-pay or cosmetic payments directly to these PBs |
+| **Payment Bucket** | Use the "DEPOSITS" bucket for all PB-related payments |
+| **Collection** | Handle all collection activities for PBs |
+
+## How to find PBs in ModMed
+
+You can locate all Patient Bills by using a specific set of filters within the ModMed system.
+
+**Navigation Path:**
+
+```
+FINANCIALS → BILLS → ALL DATES → PATIENT BILL
+```
+
+<Check>
+
+**Tip:** Review this list regularly to ensure no medical services were accidentally created as Patient Bills.
+
+</Check>
+
+## Reviewing PBs for accuracy
+
+It is crucial for your practice to regularly review all PBs to ensure they have been categorized correctly.
+
+<Accordion title="Why Review PBs?">
+
+Sometimes bills that should be sent to insurance are incorrectly created as Patient Bills. This can happen when:
+- Insurance information wasn't available at check-in
+- Staff was unsure which payer to select
+- A service was incorrectly flagged as self-pay
+
+Review PBs to check for any medical CPT codes. If you find medical codes that should be billed to insurance, the bill needs to be converted to a Claim Bill (CB).
+
+</Accordion>
+
+## Avoiding mistaken PBs: the "PAYER NOT ADDED" process
+
+<Warning>
+
+**For Front Desk Staff:** If you're unsure which payer to select or the insurance isn't in the system, select "PAYER NOT ADDED" instead of leaving it as self-pay.
+
+</Warning>
+
+Clarity RCM has created a "dummy" payer in your system called "PAYER NOT ADDED".
+
+**When to Use It:**
+- Patient presents insurance that is not yet built into the system
+- Staff is unsure which payer to select
+- Patient claims to have insurance but can't provide details
+
+**The Result:**
+- A Claim Bill (CB) is created instead of a Patient Bill (PB)
+- Clarity RCM reviews these regularly and adds correct payers
+- The claim gets submitted properly once payer is identified

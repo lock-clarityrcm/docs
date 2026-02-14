@@ -1,0 +1,98 @@
+---
+title: "Using payment buckets"
+description: "Understanding the three payment buckets and when to use each one."
+sidebarTitle: "Payment Buckets"
+icon: piggy-bank
+---
+
+The payment bucket system is designed to distinguish between different types of patient payments to ensure they are applied correctly. Clarity RCM's approach is structured to create a clear separation between funds your practice controls and funds that Clarity will manage for insurance-related balances.
+
+<Warning>
+
+**Critical:** Always use the DEPOSITS bucket for cosmetic and self-pay payments. Clarity will never touch this bucket, ensuring your practice funds stay separate from insurance billing.
+
+</Warning>
+
+## Payment bucket quick reference
+
+| Bucket | Purpose | Who Uses It |
+|--------|---------|-------------|
+| **COPAY** | Copay payments only | Clarity applies; Practice collects |
+| **GENERAL** | Insurance-related non-copay payments | Clarity uses to apply to balances |
+| **DEPOSITS** | Self-pay, cosmetic, and product payments | Practice only - Clarity will NEVER touch |
+
+## Detailed bucket guidelines
+
+<AccordionGroup>
+
+<Accordion title="COPAY Bucket">
+
+**Purpose:** This bucket is used exclusively for copay payments collected from patients.
+
+**How to Use:**
+- When you collect a copay, the payment must be placed in the COPAY bucket
+- This payment must be tied directly to the specific appointment for which it was collected
+
+**What Clarity RCM Does:**
+- When Clarity RCM submits the insurance claim for that visit, they will apply the copay amount from this bucket to the claim
+- This amount will temporarily appear as "overapplied" in the system - this is normal and intentional
+- It keeps the payment allocated to the claim while the insurance company processes it and determines the final patient responsibility
+
+</Accordion>
+
+<Accordion title="GENERAL Bucket">
+
+**Purpose:** This is the primary bucket for any patient payments related to insurance claims (Claim Bills or CBs) that are not copays.
+
+**Examples of payments for this bucket:**
+- Payments collected upfront towards a patient's deductible
+- Payments made by a patient in response to a statement for an outstanding balance
+- Any other payment intended to cover patient responsibility on an insurance claim
+
+**What Clarity RCM Does:**
+- Clarity RCM will actively use the funds in the GENERAL bucket to apply to any outstanding patient balances related to insurance claims
+- This is the bucket they draw from to settle patient responsibilities on CBs
+
+</Accordion>
+
+<Accordion title="DEPOSITS Bucket">
+
+**Purpose:** This bucket is designated exclusively for payments that are managed entirely by your practice and are unrelated to insurance claims.
+
+**Examples of payments for this bucket:**
+- Payments for self-pay procedures
+- Payments for cosmetic services
+- Revenue from products sold at your practice
+
+**What Clarity RCM Does:**
+- Clarity RCM will **never touch** the money in the DEPOSITS bucket
+- It is considered "Practice only money"
+- This ensures that funds from your self-pay and cosmetic business lines are not accidentally applied to insurance balances
+- Your practice is responsible for applying these funds to the corresponding Patient Bills (PBs)
+
+</Accordion>
+
+</AccordionGroup>
+
+## Common scenarios
+
+| Payment Type | Correct Bucket | Notes |
+|--------------|----------------|-------|
+| Patient pays $25 copay at check-in | COPAY | Tie to specific appointment |
+| Patient pays $200 toward deductible | GENERAL | Clarity will apply to claim |
+| Patient pays statement balance | GENERAL | Clarity will apply to outstanding CB |
+| Patient pays for cosmetic procedure | DEPOSITS | Practice manages |
+| Patient buys skincare product | DEPOSITS | Practice manages |
+
+## Summary of responsibilities
+
+| Who | Responsibility |
+|-----|----------------|
+| **Your Practice** | Collects payments and allocates them to the correct bucket based on payment type. Posts and applies payments from DEPOSITS to self-pay/cosmetic Patient Bills (PBs). |
+| **Clarity RCM** | Manages and applies payments from COPAY and GENERAL buckets to patient balances on insurance-related Claim Bills (CBs). Does not use the DEPOSITS bucket. |
+
+<Check>
+
+Using these payment buckets correctly is a key part of our partnership. It helps us manage your revenue cycle efficiently and ensures that all payments are accounted for properly.
+
+</Check>

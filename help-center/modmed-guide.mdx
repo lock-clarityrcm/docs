@@ -1,0 +1,160 @@
+---
+title: "ModMed EMA coding guide"
+description: "EHR-specific coding guidance for practices using ModMed EMA (Modernizing Medicine)."
+sidebarTitle: "ModMed"
+icon: "laptop-medical"
+---
+
+This guide covers ModMed-specific workflows for E/M coding, documentation requirements, and common EHR functions relevant to dermatology billing. Content is tailored for practices using ModMed EMA.
+
+<Note>
+
+**Key Focus Areas:** E/M coding, Modifier 25 documentation, time-based billing, and telehealth workflows.
+
+</Note>
+
+## E/M coding in ModMed EMA
+
+### 2021 E/M updates implementation
+
+ModMed updated EMA to support the 2021 AMA E/M coding changes, which eliminated history and exam requirements for established patient visits.
+
+### Selecting E/M level
+
+**For Established Patients (99211-99215):**
+- Select level based on either:
+  - **Medical Decision Making (MDM)** - Recommended for most dermatology visits
+  - **Total Time** - When counseling/coordination dominates
+
+**For New Patients (99202-99205):**
+- Same criteria apply
+- 99201 was deleted in 2021
+
+### MDM documentation in EMA
+
+| MDM Element | Where to Document in EMA |
+|-------------|-------------------------|
+| Number of Problems | Problem list, Assessment |
+| Data Reviewed | Review of Records section |
+| Risk of Complications | Plan notes, Prescription details |
+
+## Time-based coding
+
+### What counts as time
+
+Total time on the date of encounter includes:
+- Preparing to see the patient (reviewing records)
+- Obtaining/reviewing history
+- Performing examination
+- Counseling and education
+- Ordering tests/procedures
+- Documenting in EMA
+- Care coordination
+
+### Time thresholds
+
+<Tabs>
+  <Tab title="Established Patients">
+    | Code | Time Required |
+    |------|---------------|
+    | 99211 | Supervision only |
+    | 99212 | 10-19 minutes |
+    | 99213 | 20-29 minutes |
+    | 99214 | 30-39 minutes |
+    | 99215 | 40-54 minutes |
+  </Tab>
+  <Tab title="New Patients">
+    | Code | Time Required |
+    |------|---------------|
+    | 99202 | 15-29 minutes |
+    | 99203 | 30-44 minutes |
+    | 99204 | 45-59 minutes |
+    | 99205 | 60-74 minutes |
+
+    **Note:** 99201 was deleted in 2021.
+  </Tab>
+</Tabs>
+
+## Modifier 25 documentation
+
+<Warning>
+
+**Cigna Requirement:** Cigna requires visit notes attached to claims with Modifier 25. See the [Cigna Modifier 25 Policy](/help-center/cigna-modifier-25) for details.
+
+</Warning>
+
+### When using Modifier 25 in ModMed
+
+When billing an E/M with Modifier 25 alongside a procedure:
+
+1. **Document the E/M separately** from procedure documentation
+2. **Include all required elements:**
+   - Review of history relevant to E/M
+   - Problem assessment
+   - Clinical diagnosis with explanation
+   - Review of procedure and alternatives
+   - Post-operative care instructions
+
+3. **For Cigna claims:** Attach visit notes to claim (see Cigna Modifier 25 alert)
+
+### ModMed bill attachment
+
+1. Open the bill for the encounter
+2. Go to **Additional Information** tab
+3. Click **Add Visit Notes**
+4. Attach the visit note to the bill
+
+**Note:** This is for internal tracking. For payers requiring documentation (like Cigna), you must still send records manually.
+
+## Common ModMed workflows
+
+### Signing off notes
+
+Notes should be signed off within the same day of service when possible:
+- Unsigned notes may delay billing
+- Notes open longer than 90 days require special handling
+- Contact billing team for notes requiring late signatures
+
+### Diagnosis code selection
+
+When selecting diagnosis codes in EMA:
+- Be as specific as possible
+- Avoid unspecified codes when specificity is documented
+- Laterality matters - specify left, right, or bilateral
+- Episode of care coding: use appropriate 7th character
+
+## Telehealth in ModMed
+
+### Place of service
+
+- **POS 02:** Telehealth provided other than patient's home
+- **POS 10:** Telehealth provided in patient's home
+
+### Modifier requirements
+
+| Modifier | Use |
+|----------|-----|
+| 95 | Synchronous telemedicine service |
+| GT | Via interactive audio and video telecommunications |
+
+### Documentation requirements
+
+Document same elements as in-person visit, plus:
+- Technology platform used
+- Patient's location and consent
+- Any technical limitations
+
+## Add-on code G2211
+
+### When to use
+
+G2211 is payable with E/M codes 99202-99215 when:
+- Visit is part of ongoing relationship
+- Patient has serious or complex condition
+- Provider manages longitudinal care
+
+### ModMed documentation
+
+Document the ongoing relationship and complexity in the assessment/plan section.
+
+**Note:** Check payer coverage - not all payers reimburse G2211.

@@ -1,0 +1,143 @@
+---
+title: "Aetna signature policy"
+description: "Provider signatures must include credentials (MD, DO, PA) to avoid claim denials."
+sidebarTitle: "Aetna"
+icon: triangle-exclamation
+---
+
+<Danger>
+
+**Urgent Action Required:** All providers must update electronic signatures to include credentials (MD, DO, PA, etc.) immediately. Claims are being denied without proper credentials.
+
+</Danger>
+
+<Note>
+
+Original policy memo: March 2023
+
+</Note>
+
+Aetna is actively denying claims when provider signatures do not include credentials. These denials appear as CO-96 "Non-covered Charges" with remark code N163 "medical record does not support code billed per the code definition." Most affected claims are for flap transfers, intermediate repairs, and complex repairs.
+
+## The issue
+
+Aetna's Medical Record policy requires that provider signatures include physician-specialty credentials. Claims are being denied even when medical records otherwise support the procedures billed.
+
+## Aetna's signature requirements
+
+### All medical record entries must include:
+
+| Requirement | Acceptable Formats |
+|-------------|-------------------|
+| Author identification | Signature, initials, or electronic identifier |
+| Credentials | MD, DO, PA, DPM, etc. |
+| No stamped signatures | Handwritten, electronic, or facsimile only |
+
+<AccordionGroup>
+
+<Accordion title="Acceptable signature formats">
+
+- Handwritten signature or initials **with credentials**
+- Electronic signature with authentication **with credentials**
+- Facsimiles of original written or electronic signatures **with credentials**
+
+</Accordion>
+
+<Accordion title="Where credentials must appear">
+
+Credentials must be **somewhere on the medical record**:
+- Next to the provider's signature, OR
+- Preprinted with the provider's name on practice stationery
+
+**If the provider is not listed on the stationery, credentials must be part of the signature.**
+
+</Accordion>
+
+</AccordionGroup>
+
+## Required actions
+
+### Immediate: Update electronic signatures
+
+All providers and clinical staff must **immediately update their electronic signature** to include credentials:
+
+| Before | After |
+|--------|-------|
+| John Smith | John Smith, MD |
+| Jane Doe | Jane Doe, PA-C |
+| Dr. Johnson | Robert Johnson, DO |
+
+### For pending claims
+
+1. Check Practice Billing notes for signature requests
+2. Sign records with updated amendment/addendum including credentials
+3. Reply to Practice Billing note confirming completion
+4. Assign back to the correct billing bucket
+
+## How to identify affected claims
+
+### Denial codes to watch for
+
+| Code | Description | Likely Cause |
+|------|-------------|--------------|
+| CO-96 | Non-covered Charges | May be signature issue |
+| N163 | Medical record does not support code | Check for missing credentials |
+
+### Commonly affected procedure types
+
+- Flap transfers
+- Intermediate repairs
+- Complex repairs
+
+## EHR-specific instructions
+
+<Tabs>
+
+<Tab title="ModMed">
+
+### ModMed EMA
+
+1. Go to **Settings > User Profile**
+2. Update **Signature** field to include credentials
+3. Save changes
+4. Verify signature appears correctly on test document
+
+</Tab>
+
+<Tab title="EZDerm">
+
+### EZDerm
+
+1. Navigate to **Provider Setup**
+2. Edit signature block to include credentials
+3. Update and save
+
+</Tab>
+
+<Tab title="Other EHR">
+
+### Other EHR systems
+
+Contact your EHR administrator to update provider signature settings to include credentials.
+
+</Tab>
+
+</Tabs>
+
+## Important notes
+
+<Warning>
+
+- This is an **urgent matter**
+- Other payers may begin enforcing similar policies
+- Failure to comply will result in legally denied reimbursement
+
+</Warning>
+
+## Resources
+
+- [Aetna Office Manual for Health Care Professionals](https://www.aetna.com/content/dam/aetna/pdfs/aetnacom/health-care-professionals/office_manual_hcp.pdf)
+
+## Questions?
+
+Contact your Clarity RCM billing team or email [coding@clarityrcm.com](mailto:coding@clarityrcm.com)

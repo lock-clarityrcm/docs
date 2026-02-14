@@ -1,0 +1,71 @@
+---
+title: 'Using the "PAYER NOT ADDED" payer'
+description: "A guide to correctly handling unlisted insurance plans at the front desk."
+sidebarTitle: "Payer Not Added"
+icon: user-plus
+---
+
+The "PAYER NOT ADDED" feature is a crucial tool designed to streamline the billing process and ensure that claims are handled correctly by Clarity RCM, even when there's uncertainty at the front desk.
+
+<Check>
+
+**Front Desk Rule:** When in doubt, select "PAYER NOT ADDED." This ensures the bill goes to Clarity for proper insurance billing rather than becoming a self-pay Patient Bill.
+
+</Check>
+
+## What is "PAYER NOT ADDED"?
+
+"PAYER NOT ADDED" is a "dummy" payer that Clarity RCM builds into your ModMed system. It acts as a placeholder for your front desk staff to use in specific situations involving patient insurance.
+
+## When to use "PAYER NOT ADDED"
+
+| Situation | Action |
+|-----------|--------|
+| Insurance plan not in the system | Select "PAYER NOT ADDED" |
+| Unsure which payer to select | Select "PAYER NOT ADDED" |
+| Patient says they have insurance but no card | Select "PAYER NOT ADDED" |
+| Insurance card is unclear or ambiguous | Select "PAYER NOT ADDED" |
+| Patient wants to self-pay (no insurance) | **Do NOT use** - leave as self-pay |
+| Cosmetic procedure (not billed to insurance) | **Do NOT use** - create Patient Bill |
+
+## Why is this process important?
+
+<Warning>
+
+**Avoid This Mistake:** If you leave insurance blank or skip payer selection, a Patient Bill (PB) is created. Your practice becomes responsible for collecting, and the claim is never sent to insurance.
+
+</Warning>
+
+| Benefit | Description |
+|---------|-------------|
+| **Ensures a Claim Bill (CB) is Created** | This action correctly routes the bill to Clarity's team for handling, rather than incorrectly creating a Patient Bill (PB). |
+| **Flags Payers for Action** | This serves as an internal alert. Clarity's team regularly reviews claims assigned to "PAYER NOT ADDED" to identify new insurance payers to build. |
+| **Protects Revenue** | Insurance claims get processed correctly, maximizing reimbursement. |
+
+## What happens after selection?
+
+<Accordion title="Step-by-step process">
+
+Once your front desk staff has selected "PAYER NOT ADDED" for a patient and the provider has finalized their note:
+
+1. **Claim Bill Created** - A claim bill (CB) is automatically generated and enters Clarity RCM's workflow
+2. **Review by Clarity** - The Clarity RCM team will see this claim during their regular reviews
+3. **Payer Built** - Our team builds the correct payer in ModMed
+4. **Profile Updated** - We update the patient's insurance profile
+5. **Claim Submitted** - We submit the claim to the proper insurance company
+
+</Accordion>
+
+By following this simple procedure, your practice helps ensure that all insurance-related bills are directed to Clarity RCM for expert management, from submission and denial management to final resolution.
+
+## Quick reference card
+
+<Note>
+
+**Print This for Front Desk:**
+- Patient has insurance you can't find? → Select "PAYER NOT ADDED"
+- Not sure which plan to pick? → Select "PAYER NOT ADDED"
+- True self-pay with no insurance? → Leave as self-pay (Patient Bill)
+- Cosmetic procedure? → Create Patient Bill, use DEPOSITS bucket
+
+</Note>

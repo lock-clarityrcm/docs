@@ -1,0 +1,248 @@
+---
+title: "Troubleshooting common issues"
+description: "Self-service steps to investigate common issues before escalating to your Clarity RCM team."
+sidebarTitle: "Troubleshooting"
+icon: wrench
+---
+
+Use this guide to investigate common issues before escalating to your Clarity RCM team. Having the right information ready speeds up resolution.
+
+<Danger>
+
+**Always escalate immediately if:** Patient safety is involved, compliance deadlines are approaching, or you suspect fraud/security issues.
+
+</Danger>
+
+<Tabs>
+
+<Tab title="Claims">
+
+## Claim status inquiries
+
+### Before contacting Clarity
+
+Gather this information:
+- Patient name and date of birth
+- Date of service
+- Insurance payer name
+- Specific question or concern
+
+### Check in your EHR first
+
+1. Navigate to the patient's account
+2. Find the bill for the date of service
+3. Check the bill status:
+   - **Draft:** Notes not yet signed off
+   - **Ready:** Awaiting submission
+   - **Submitted:** Sent to payer
+   - **Paid/Partial:** Payment received
+   - **Denied:** Requires action
+
+<Accordion title="Common claim delays">
+
+| Issue | Likely Cause | Resolution |
+|-------|-------------|------------|
+| Claim not submitted | Notes unsigned | Provider signs off notes |
+| Claim rejected | Missing/invalid patient info | Verify demographics and insurance |
+| Claim on hold | Prior auth needed | Practice obtains authorization |
+| Claim pending | Normal processing | Allow 14-45 days for initial response |
+
+</Accordion>
+
+### When to escalate
+
+Contact your Account Manager if:
+- Claim has been pending 45+ days
+- Claim was denied and you have questions
+- You believe there's an error in the claim
+
+</Tab>
+
+<Tab title="Payments">
+
+## Missing payment investigation
+
+### Information to gather
+
+Before contacting Clarity about a missing payment:
+- Check/EFT number
+- Payment date
+- Payment amount
+- Payer name
+- Patient name (if patient payment)
+
+### Self-service steps
+
+1. **Verify payment method:** Check if payment was check, EFT, or credit card
+2. **Check bank deposits:** Confirm payment was actually received
+3. **Check posting date range:** Payment may be posted to a different date
+4. **Review ERA/remittance:** Match to specific claims
+
+<Accordion title="Common reasons payments appear 'missing'">
+
+| Situation | Explanation |
+|-----------|-------------|
+| Posted to different DOS | Payment applied to older claim |
+| Pending reconciliation | Large payments may take 1-2 days to post |
+| Split payment | Applied across multiple claims |
+| Recoupment | Offset against prior overpayment |
+
+</Accordion>
+
+</Tab>
+
+<Tab title="Denials">
+
+## Denial questions
+
+### Understanding denial codes
+
+<Accordion title="Common denial codes and meanings">
+
+| Code | Meaning | Typical Resolution |
+|------|---------|-------------------|
+| CO-4 | Procedure code inconsistent with modifier | Review modifier usage |
+| CO-16 | Missing information | Submit additional documentation |
+| CO-22 | Coordination of benefits | Verify primary/secondary payer |
+| CO-50 | Not medically necessary | Appeal with supporting documentation |
+| CO-97 | Already paid | Check for duplicate billing |
+| PR-1 | Deductible | Patient responsibility |
+| PR-2 | Coinsurance | Patient responsibility |
+| PR-3 | Copay | Patient responsibility |
+
+</Accordion>
+
+<Note>
+
+**CO vs PR codes:** "CO" (Contractual Obligation) means the write-off is due to your contract. "PR" (Patient Responsibility) means the patient owes the amount.
+
+</Note>
+
+### Before asking about a denial
+
+1. Check the denial reason code on the remittance
+2. Note whether it's a "CO" or "PR" code
+3. Review the claim details for obvious errors
+
+### When to escalate
+
+Contact Clarity if:
+- You don't understand the denial reason
+- You believe the denial is incorrect
+- You need help with an appeal
+- You're seeing a pattern of similar denials
+
+</Tab>
+
+<Tab title="Patient Issues">
+
+## Patient balance disputes
+
+### Steps before escalating
+
+1. **Direct patient to Patient Services first:** [502-480-1940](tel:502-480-1940)
+2. **If patient calls your office:**
+   - Verify the balance in your system
+   - Check if insurance has processed the claim
+   - Look for any unapplied payments
+
+### Information Patient Services needs
+
+- Patient name and date of birth
+- Date of service in question
+- Specific dispute (amount, services, etc.)
+- Whether patient has EOB from insurance
+
+<Accordion title="Common balance dispute resolutions">
+
+| Dispute | Resolution |
+|---------|------------|
+| "I already paid" | Verify payment in system; may need to locate and apply |
+| "Insurance should cover this" | Review EOB; may be patient responsibility |
+| "Wrong amount" | Compare bill to EOB; explain patient portion |
+| "Didn't receive these services" | Review claim details; correct if needed |
+
+</Accordion>
+
+</Tab>
+
+<Tab title="Portal Access">
+
+## Portal access issues
+
+### PayJunction issues
+
+<AccordionGroup>
+
+<Accordion title="Can't log in">
+
+1. Try password reset at login page
+2. Check if account is locked (too many attempts)
+3. Contact your Account Manager if issues persist
+
+</Accordion>
+
+<Accordion title="Transaction issues">
+
+1. Verify card details are correct
+2. Check daily transaction limits
+3. Confirm card hasn't expired
+
+</Accordion>
+
+</AccordionGroup>
+
+### Klara issues
+
+<AccordionGroup>
+
+<Accordion title="Can't access messages">
+
+1. Verify login credentials
+2. Check if you're using the correct Klara workspace
+3. Contact your Account Manager for access reset
+
+</Accordion>
+
+<Accordion title="Patient not seeing messages">
+
+1. Verify patient contact information
+2. Check message was sent to correct thread
+3. Patient may need to check spam/other folders
+
+</Accordion>
+
+</AccordionGroup>
+
+### EHR/PMS access issues
+
+**Clarity team access problems:**
+1. Verify the Firm Admin account is active
+2. Check password hasn't expired
+3. Confirm permissions are still set correctly
+
+</Tab>
+
+</Tabs>
+
+## When to escalate to Clarity
+
+### Always escalate if
+
+- Patient safety is involved
+- Compliance deadline is approaching
+- Issue involves potential fraud or security
+- You've tried self-service steps without resolution
+- Multiple patients/claims are affected
+
+### Information to include
+
+When escalating any issue, provide:
+
+| For Claims | For Payments | For Patient Issues |
+|------------|--------------|-------------------|
+| Patient name/DOB | Check/EFT number | Patient name/DOB |
+| Date of service | Payment date | Issue description |
+| Payer name | Amount | Steps already taken |
+| Bill number | Payer | Urgency level |
+| Specific question | Claims affected | Patient contact preference |
